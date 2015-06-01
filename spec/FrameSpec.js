@@ -42,7 +42,13 @@ describe('Frame', function(){
     });
   });
 
-
+  describe('can register', function(){
+  it('a spare', function(){
+    frame.registerGo(5);
+    frame.registerGo(5);
+    expect(frame.isSpare()).toEqual(true);
+    });
+  });
 });
 
 

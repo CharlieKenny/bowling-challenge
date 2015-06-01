@@ -22,6 +22,9 @@ Frame.prototype.total = function() {
   return (this.startingPins - this.standingPins); 
 };
 
+Frame.prototype.isSpare = function() {
+  return (this.bowlCount === 2 && this.standingPins === 0)
+};
 
 
 
